@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShoppingCart, User, Search, Menu, LogIn } from 'lucide-react';
+import { ShoppingCart, Search, Menu, LogIn } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
@@ -13,7 +13,9 @@ const Header: React.FC = () => {
           </Link>
           <nav className="hidden lg:flex items-center gap-8">
             <Link to="/" className="text-primary-900/70 hover:text-primary-600 font-bold text-sm uppercase tracking-widest transition-colors">Home</Link>
-            <Link to="#" className="text-primary-900/70 hover:text-primary-600 font-bold text-sm uppercase tracking-widest transition-colors">Products</Link>
+            <Link to="/admin/dashboard" className="text-primary-900/70 hover:text-primary-600 font-bold text-sm uppercase tracking-widest transition-colors">Dashboard</Link>
+            <Link to="/admin/users" className="text-primary-900/70 hover:text-primary-600 font-bold text-sm uppercase tracking-widest transition-colors">Users</Link>
+            <Link to="/admin/products" className="text-primary-900/70 hover:text-primary-600 font-bold text-sm uppercase tracking-widest transition-colors">Products</Link>
             <Link to="#" className="text-primary-900/70 hover:text-primary-600 font-bold text-sm uppercase tracking-widest transition-colors">Farm Story</Link>
           </nav>
         </div>
@@ -33,7 +35,7 @@ const Header: React.FC = () => {
               <LogIn className="w-4 h-4" />
               Login
             </Link>
-            <Link to="/register" className="hidden sm:block px-6 py-2 bg-primary-950 text-white text-sm font-bold rounded-xl hover:bg-primary-800 transition-all shadow-lg shadow-primary-900/20">
+            <Link to="/register" className="hidden sm:block px-6 py-2 bg-white text-primary-950 text-sm font-bold rounded-xl border border-primary-100 hover:bg-primary-600 hover:text-white hover:border-primary-600 transition-all shadow-lg shadow-primary-900/10">
               Sign Up
             </Link>
           </div>

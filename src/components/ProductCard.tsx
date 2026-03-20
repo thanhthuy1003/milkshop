@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShoppingCart, Star, Heart, Plus } from 'lucide-react';
+import { Star, Heart, Plus } from 'lucide-react';
 
 interface ProductCardProps {
   id: string;
